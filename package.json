@@ -17,6 +17,13 @@
         "api",
         "loopback-component"
     ],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/yahoohung/loopback-component-oauth2-server.git"
+    },
+    "bugs": {
+        "url": "http://github.com/yahoohung/loopback-component-oauth2-server/issues"
+    },
     "loopback-component": {},
     "main": "./lib",
     "dependencies": {

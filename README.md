@@ -98,6 +98,15 @@ module.exports = function(app) {
         }
     ));
 
+    // Set up the login handler
+    router.post(options.loginPath || '/login',
+        passport.authenticate('loopback-oauth2-local', {
+            successReturnToOrRedirect: '/',
+            passReqToCallback: true,
+            failureRedirect: options.loginFailPage || '/login',
+            failureFlash: true
+        }));    
+
     app.use(router);
 };
 ```
