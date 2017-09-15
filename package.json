@@ -1,6 +1,6 @@
 {
     "name": "loopback-component-oauth2-server",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "OAuth 2.0 provider for LoopBack version 3",
     "engines": {
         "node": ">= 0.4.0"
