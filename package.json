@@ -1,0 +1,56 @@
+{
+    "name": "loopback-component-oauth2-server",
+    "version": "1.0.0",
+    "description": "OAuth 2.0 provider for LoopBack version 3",
+    "engines": {
+        "node": ">= 0.4.0"
+    },
+    "keywords": [
+        "StrongLoop",
+        "LoopBack",
+        "oauth",
+        "oauth2",
+        "passport",
+        "authentication",
+        "authorization",
+        "gateway",
+        "api",
+        "loopback-component"
+    ],
+    "loopback-component": {},
+    "main": "./lib",
+    "dependencies": {
+        "async": "^2.5.0",
+        "body-parser": "^1.18.1",
+        "connect-ensure-login": "^0.1.1",
+        "debug": "^3.0.1",
+        "jws": "^3.1.4",
+        "passport": "^0.4.0",
+        "passport-http": "^0.3.0",
+        "passport-http-bearer": "^1.0.1",
+        "passport-local": "^1.0.0",
+        "passport-oauth2-client-password": "^0.1.2",
+        "passport-strategy": "^1.0.0",
+        "path-to-regexp": "^2.0.0",
+        "pkginfo": "^0.4.1",
+        "strong-globalize": "^3.0.0",
+        "uid2": "^0.0.3",
+        "utils-merge": "^1.0.0"
+    },
+    "devDependencies": {
+        "chai": "^4.1.2",
+        "chai-connect-middleware": "^0.3.1",
+        "chai-oauth2orize-grant": "^0.3.0",
+        "eslint": "^4.6.1",
+        "eslint-config-loopback": "^8.0.0",
+        "loopback": "^3.11.1",
+        "mocha": "^3.5.3",
+        "vows": "^0.8.1"
+    },
+    "scripts": {
+        "test": "mocha --reporter spec --require test/bootstrap/node test/*.test.js test/**/*.test.js",
+        "lint": "eslint .",
+        "posttest": "npm run lint"
+    },
+    "license": "MIT"
+}
